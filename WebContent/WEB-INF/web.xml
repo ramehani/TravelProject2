@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>
+	TravelProject2</display-name>
+	
+	<!-- 
+		Struts Configuration
+	 -->
+	
+	<servlet>
+        
+		<servlet-name>action</servlet-name>
+		<servlet-class>
+			org.apache.struts.action.ActionServlet
+		</servlet-class>
+		
+		
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>/WEB-INF/hotels/struts-config.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+				
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<!--  -->
+	
+	<!-- Reservation Side changes -->
+	<servlet>
+		<description>
+		</description>
+		<display-name>ResevationSearch</display-name>
+		<servlet-name>ResevationSearch</servlet-name>
+		<servlet-class>hotels.reservation.ResevationSearch</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ResevationSearchResults</display-name>
+		<servlet-name>ResevationSearchResults</servlet-name>
+		<servlet-class>hotels.reservation.ResevationSearchResults</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ReservationDetails</display-name>
+		<servlet-name>ReservationDetails</servlet-name>
+		<servlet-class>hotels.reservation.ReservationDetails</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ValidateTransactionProcess</display-name>
+		<servlet-name>ValidateTransactionProcess</servlet-name>
+		<servlet-class>hotels.reservation.ValidateTransactionProcess</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>ReservationFinal</display-name>
+		<servlet-name>ReservationFinal</servlet-name>
+		<servlet-class>hotels.reservation.ReservationFinal</servlet-class>
+	</servlet>
+	<servlet>
+		<description>
+		</description>
+		<display-name>testcheckup</display-name>
+		<servlet-name>testcheckup</servlet-name>
+		<servlet-class>hotels.testcheckup</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResevationSearch</servlet-name>
+		<url-pattern>/hotels/ResevationSearch</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResevationSearchResults</servlet-name>
+		<url-pattern>/hotels/ResevationSearchResults</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReservationDetails</servlet-name>
+		<url-pattern>/hotels/ReservationDetails</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ValidateTransactionProcess</servlet-name>
+		<url-pattern>/hotels/ValidateTransactionProcess</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ReservationFinal</servlet-name>
+		<url-pattern>/hotels/ReservationFinal</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>testcheckup</servlet-name>
+		<url-pattern>/testcheckup</url-pattern>
+	</servlet-mapping>
+	<!-- Reservation finish in here -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

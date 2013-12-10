@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+ 
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+ 
+<struts-config>
+    <form-beans>
+        <form-bean name="ResSearchCriteriaForm"
+            type="rezg.web.base.reservation.ResSearchCriteriaForm" />
+                                   
+        <form-bean name="SignInForm"
+            type="rezg.web.admin.SignInForm" />
+            
+        <form-bean name="ViewBookingForm"
+            type="rezg.web.base.reservation.ViewBookingForm" />    
+            
+        <form-bean name="BookingCancelForm"
+            type="rezg.web.base.reservation.BookingCancelForm" /> 
+          
+        <form-bean name="BookingModifyForm"
+            type="rezg.web.base.reservation.BookingModifyForm" />
+            
+        <form-bean name="LocaleForm"
+            type="rezg.web.base.reservation.LocaleForm" />    
+            
+         <form-bean name="SignOutForm"
+            type="rezg.web.admin.SignOutForm" /> 
+            
+         <form-bean name="MyAccountForm"
+            type="rezg.web.base.reservation.MyAccountForm" />   
+</form-beans>
+
+
+     
+    <global-exceptions>
+    </global-exceptions>
+    <global-forwards>
+    <forward name="SessionTimeOut" path="/admin/SignIn.jsp"/>    
+    </global-forwards>
+ 
+    <action-mappings>
+        <!-- <action path="/Reservation/ResSearchCriteria" name="ResSearchCriteriaForm" 
+        validate="true" input="/Reservation/ResSearchCriteria.jsp"
+            type="rezg.web.base.reservation.ResSearchCriteriaAction">
+            <forward name="success" path="/Reservation/ResSearchCriteriaSuccess.jsp" />
+            <forward name="failure" path="/Reservation/ResSearchCriteria.jsp" />
+        </action>
+          
+        <action path="/changeLocale" name="LocaleForm"   
+        validate="true" input="/admin/SignIn.jsp"
+            type="rezg.web.base.reservation.LocaleAction">
+            <forward name="success" path="/admin/SignIn.jsp" />
+            <forward name="failure" path="/admin/SignIn.jsp" />
+        </action>
+        
+        <action path="/changeLocaleMyaccount" name="LocaleForm"  
+        validate="true" input="/admin/SignIn.jsp"
+            type="rezg.web.base.reservation.LocaleAction">
+            <forward name="success" path="/Reservation/MyAccount.jsp" />
+            <forward name="failure" path="/admin/SignIn.jsp" />
+        </action>
+        
+        <action path="/changeLocaleView" name="LocaleForm"  
+        validate="true" input="/admin/SignIn.jsp"
+            type="rezg.web.base.reservation.LocaleAction">
+            <forward name="success" path="/Reservation/ViewBooking.jsp" />
+            <forward name="failure" path="/admin/SignIn.jsp" />
+        </action> -->
+        
+        <!-- <action path="/changeLocaleCancel" name="LocaleForm"  
+        validate="true" input="/admin/SignIn.jsp"
+            type="rezg.web.base.reservation.LocaleAction">
+            <forward name="success" path="/Reservation/CancelBooking.jsp" />
+            <forward name="failure" path="/admin/SignIn.jsp" />
+        </action>
+        
+        <action path="/changeLocaleCancelConf" name="LocaleForm"  
+        validate="true" input="/admin/SignIn.jsp"
+            type="rezg.web.base.reservation.LocaleAction">
+            <forward name="success" path="/Reservation/CancelBookingConfirm.jsp" />
+            <forward name="failure" path="/admin/SignIn.jsp" />
+        </action>
+        
+        <action path="/changeLocaleModify" name="LocaleForm"  
+        validate="true" input="/admin/SignIn.jsp"
+            type="rezg.web.base.reservation.LocaleAction">
+            <forward name="success" path="/Reservation/ModifyBooking.jsp" />
+            <forward name="failure" path="/admin/SignIn.jsp" />
+        </action>
+        
+        <action path="/changeLocaleModifyConf" name="LocaleForm"  
+        validate="true" input="/admin/SignIn.jsp"
+            type="rezg.web.base.reservation.LocaleAction">
+            <forward name="success" path="/Reservation/ModifyBookingConfirm.jsp" />
+            <forward name="failure" path="/admin/SignIn.jsp" />
+        </action> -->
+        
+        
+        <action path="/login/SignIn" name="SignInForm"  parameter="param" scope="request"        
+        validate="true" input="/admin/SignIn.jsp"
+            type="admin.SignInAction">
+            <forward name="success" path="/Reservation/MyAccount.jsp" />
+            <forward name="signout" path="/admin/SignIn.jsp" />
+            <forward name="error" path="/admin/SignIn.jsp" />
+        </action>
+        
+         <!-- <action path="/login/SignOut" name="SignOutForm"  parameter="param"
+         validate="false" input="/admin/SignIn.jsp"
+            type="rezg.web.admin.SignInAction">           
+            <forward name="signout" path="/admin/SignIn.jsp" />
+            <forward name="error" path="/admin/SignIn.jsp" />
+        </action>
+        
+         <action path="/ViewBooking" name="ViewBookingForm" 
+         input="/Reservation/MyAccount.jsp"
+            type="rezg.web.base.reservation.ViewBookingAction">
+            <forward name="success" path="/Reservation/ViewBooking.jsp" />
+            <forward name="failure" path="/Reservation/MyAccount.jsp" />
+        </action>
+        
+        <action path="/CancelBooking" name="BookingCancelForm" parameter="param"
+         input="/Reservation/MyAccount.jsp"
+            type="rezg.web.base.reservation.MyBookingAction">
+            <forward name="load" path="/Reservation/CancelBooking.jsp" /> 
+           
+        </action>
+        
+        <action path="/CancelBookProcess" name="BookingCancelForm" parameter="param"
+         input="/Reservation/CancelBooking.jsp"
+            type="rezg.web.base.reservation.MyBookingAction">
+            <forward name="success" path="/Reservation/CancelBookingConfirm.jsp" />
+             <forward name="error" path="/Reservation/CancelBooking.jsp" />
+        </action>
+        
+        <action path="/ModifyBooking" name="BookingModifyForm" parameter="param"
+         input="/Reservation/MyAccount.jsp"
+            type="rezg.web.base.reservation.MyBookingAction">
+             <forward name="load" path="/Reservation/ModifyBooking.jsp" />
+        </action>
+        
+        <action path="/ModifyBookingProcess" name="BookingModifyForm" parameter="param"
+         input="/Reservation/ModifyBooking.jsp"
+            type="rezg.web.base.reservation.MyBookingAction">
+             <forward name="success" path="/Reservation/ModifyBookingConfirm.jsp" />
+             <forward name="error" path="/Reservation/ModifyBooking.jsp" />
+        </action>
+        
+        <action path="/MyAccount" name="SignInForm" 
+         input="/Reservation/MyAccount.jsp"
+            type="rezg.web.base.reservation.MyAccountAction">
+             <forward name="success" path="/Reservation/MyAccount.jsp" />
+             <forward name="error" path="/Reservation/ModifyBooking.jsp" />
+        </action> -->
+        
+    </action-mappings>
+
+    <message-resources parameter="rezg.resource.ApplicationResources"></message-resources>
+    
+   
+    
+</struts-config>

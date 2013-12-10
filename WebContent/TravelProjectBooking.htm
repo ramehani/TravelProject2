@@ -1,0 +1,367 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	
+	<title>Search Prices and Availability</title>
+
+	<script type="text/javascript" src="js/cityname.js"></script>
+	<script type="text/javascript" src="js/hotelnam_spicific.js"></script>
+	<script type="text/javascript" src="js/defaultvalue.js"></script>
+	<script type="text/javascript" src="js/roomtypescript_city_drop_down.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.12.custom.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mainiclude.js"></script>	
+	<!--script type="text/javascript" src="js/Combined.js"></script-->
+	<script type="text/javascript" src="js/currencyloader.js"></script>
+	<script type="text/javascript" src="js/generaljs.js"></script>
+	<style type="text/css" media="all"><!--
+		@import url("css/jquery-ui-1.8.12.custom.css?version=3");
+		@import url("css/all.css");
+	--></style>
+
+
+	<!--[if lt IE 8]><link media="screen" rel="stylesheet" type="text/css" href="css/ie.css" /><![endif]-->
+</head>
+<body class="inner-page3">
+	<form name="frm1">
+		<input name="AffiliateMainPage" type="hidden" />
+		<input value="en" name="language" type="hidden"/>
+		<input value="US" name="country" type="hidden" />
+		<input value="RA" name="afftCode" type="hidden" />
+		<input name="userName" type="hidden" />
+		<input value="null" name="passWord" type="hidden" />
+		<input value="0" name="HidStudNum" type="hidden" />
+		<input value="N" name="selDiscount2" type="hidden" />
+		<input value="0" name="cmbNoChi" type="hidden" />
+		<input value="0" name="cmbNoOfRooms" type="hidden" />
+		<input value="%" name="selGroup" type="hidden" />
+		<input name="hidCurrMonth" type="hidden" />
+		<input name="hidCurrYear" type="hidden" />
+		<input value="%" name="cityCd" type="hidden" />
+		<input value="Colombo" name="selCity" type="hidden">
+		<input value="%" name="hotelCode" type="hidden">
+		<input value="%" name="selAmenity" type="hidden">
+		<input value="%" name="selCategory" type="hidden">
+		<input value="%" name="selCategoryName" type="hidden">
+		<input value="%" name="selLocation" type="hidden">
+		<input name="ChkStdDis" type="hidden">
+		<input value="%" name="HidRoomType" type="hidden">
+		<input value="1" name="cmbNoOfNights" type="hidden">
+		<input value="5" name="cmbCheckInMonth" type="hidden">
+		<input value="2009" name="cmbCheckInYear" type="hidden">
+		<input value="5" name="cmbCheckOutMonth" type="hidden">
+		<input value="2009" name="cmbCheckOutYear" type="hidden">
+		<input value="" name="cmbCheckInDate" type="hidden">
+		<input value="" name="cmbCheckOutDate" type="hidden">
+	</form>
+	<noscript>&lt;div&gt;Javascript must be enabled for the correct page display&lt;/div&gt;</noscript>
+	<div id="wrapper">
+		<div class="container">
+			<div class="container2">
+				<div class="skip"><a href="http://bookings.travelstay.com/TravelStayBooking.htm#content">Skip to Content</a></div>
+				<!-- header -->
+				<div id="header" class="vcard">
+					<h1 class="logo"><a class="fn org url" accesskey="1" href="http://www.travelstay.com/">TravelStay.com</a></h1>
+					<img class="logo-print" src="images/logo-print.gif" width="274" height="87" alt="image description">
+					<div class="holder-alt">
+						<ul id="lang-select">
+							<li>
+								<div class="choose-lang2">
+									<img src="images/en.gif" alt="English" title="English" width="16" height="11" style="margin-top:3px">
+									<span class="lang-name" title="English">English</span>
+									<a class="btn-lang-drop-langdrop" href="http://bookings.travelstay.com/TravelStayBooking.htm#">Change lang</a>
+								</div>
+								<ul class="lang-drop-l2">
+									<li><a class="lang-name-l2" href="http://bookings.travelstay.com/TravelStayBooking_de.htm" title="Deutsch"><img class="lang-name-img" src="images/de.gif" alt="Deutsch" title="Deutsch" width="16" height="11">Deutsch</a></li>
+									<li><a class="lang-name-l2" href="http://bookings.travelstay.com/TravelStayBooking_fr.htm" title="Français"><img class="lang-name-img" src="images/fr.gif" alt="Français" title="Français" width="16" height="11">Français</a></li>
+									<li><a class="lang-name-l2" href="http://bookings.travelstay.com/TravelStayBooking_es.htm" title="Español"><img class="lang-name-img" src="images/es.gif" alt="Español" title="Español" width="16" height="11">Español</a></li>
+									<li><a class="lang-name-l2" href="http://bookings.travelstay.com/TravelStayBooking_it.htm" title="Italiano"><img class="lang-name-img" src="images/it.gif" alt="Italiano" title="Italiano" width="16" height="11">Italiano</a></li>
+									<li><a class="lang-name-l2" href="http://bookings.travelstay.com/TravelStayBooking_pl.htm" title="Polski"><img class="lang-name-img" src="images/pl.gif" alt="Polski" title="Polski" width="16" height="11">Polski</a></li>
+								</ul>
+							</li>
+							
+							
+						</ul>
+						<!-- nav -->
+							<ul class="nav">
+							   <li><a href="javascript:windoPopNew('http://bookings.travelstay.com/citysearch.htm')">Make a booking</a></li>
+							   <li><a href="javascript:windoPopNew('http://book.travelstay.com/en/group-enquiry.htm')">Groups</a></li>
+							   <li><a href="javascript:windoPopNew('http://www.travelstay.com/login')">My Bookings</a></li>
+							   <li><a href="javascript:windoPopNew('http://help.travelstay.com/knowledgec.aspx?cid=10677')">Customer Service</a></li>	
+							   <li><a href="javascript:windoPopNew('http://www.travelstay.com/new/contact.htm')">Contact Us</a></li>	
+					   </ul>
+
+					</div>
+					<div class="holder">
+						<!-- phone -->
+						<div class="phone tel">
+							<span class="type hidden">Work</span>
+							<strong class="value">0844 472 1800</strong>
+							<span>Booking lines open 24x7</span>
+						</div>
+					</div>
+                    					<div class="holder">
+						<!-- hotels-list -->
+						<ul class="nav-list">
+							<li class="active"><a href="http://bookings.travelstay.com/TravelStayBooking.htm#">Search</a></li>
+							<li><a href="http://bookings.travelstay.com/TravelStayBooking.htm#">Select</a></li>
+							<li><a href="http://bookings.travelstay.com/TravelStayBooking.htm#">Book</a></li>
+							<!--li><a href="#">Confirm</a></li-->
+						</ul>
+					</div>
+				</div>
+				<!-- main -->
+				<div id="main">
+					<div class="main-t"></div>
+					<div class="main-container">
+						<div class="main-container2">
+							<div class="holder-alt main-container3">
+								<!-- content -->
+								<div id="content">
+									<div class="content-holder">
+										<div class="holder-alt">
+											<!-- tabset -->
+											<ul class="tabset">
+												<li><a href="http://bookings.travelstay.com/citysearch.htm"><span>City search</span></a></li>
+												<li><a href="http://bookings.travelstay.com/SearchTypes.htm"><span>Advanced search</span></a></li>
+												<li><a href="http://bookings.travelstay.com/SearchLocations.htm"><span>City district Search</span></a></li>
+												<li><a class="active" href="images/Search Prices and Availability.htm"><span>Hotel Name</span></a></li>
+											</ul>
+										</div>
+										<!-- tab-content -->
+										<div class="tab-content">
+											<div class="b">
+												<div class="l">
+													<div class="r">
+														<div class="tl">
+															<div class="tr">
+																<div class="bl">
+																	<div class="br">
+																		<!-- search-form2 -->
+																		<form class="search-form2" action="http://bookings.travelstay.com/TravelStayBooking.htm#">
+																			<fieldset>
+																				<div class="row">
+																					<label for="destination">Destination</label>
+																					<div class="field">
+																						<select id="cmbCity" style="width:250px;" onchange="ldRelData(document.getElementById(&#39;cmbCity&#39;).options[document.getElementById(&#39;cmbCity&#39;).selectedIndex].value,&#39;%&#39;);">
+																							<!--option>London</option>
+																							<option>Edinburgh</option>
+																							<option>Glasgow</option>
+																							<option>Other / Any City</option-->
+																						<option value="CY1">London</option><option value="CY24">Glasgow</option><option value="CY3">Edinburgh</option><option value="CY13">Birmingham</option><option value="CY38">Bournemouth</option><option value="CY2">Brighton</option><option value="CY26">Cardiff</option><option value="CY71">Chester</option><option value="CY30">Durham</option><option value="CY37">Reading</option><option value="CY92">Stoke-on-Trent</option><option value="SAC">Any other city (worldwide)</option></select>
+																					</div>
+																				</div>
+																				<div class="row">
+																					<label for="district">Hotel Name</label>
+																					<div class="field">
+																						<select id="cmbAccomSelection" style="width:250px;">																							
+																						<option value="%">All Accommodation</option><option value="H1224">146 Suites Gloucester Place</option><option value="H2600">27 Paddington Hotel</option><option value="H2879">37 Collingham Place</option><option value="H2120">39 Suites London</option><option value="H2226">ABC Hyde Park Hotel</option><option value="H2618">Abbey Hotel London</option><option value="H2773">Aberdeen Guest House</option><option value="H640">Acacia Hostel London</option><option value="H499">Accommodation London Studios</option><option value="H1517">Acton Town Hotel</option><option value="H1089">Airways Hotel</option><option value="H749">Albion House Hotel</option><option value="H138">Alexander Fleming House</option><option value="H2152">Alexandra Hotel</option><option value="H1955">All Star Hostel London</option><option value="H860">Alliance House</option><option value="H2083">Ambassador Heathrow Hotel</option><option value="H162">Ambassadors Hotel London Kensington</option><option value="H1338">Amhurst Hotel</option><option value="H2308">Anchor House Hotel</option><option value="H2430">Anchorage and George IV Apartments TopFloor!</option><option value="H2916">Anwar House Hotel</option><option value="H2304">Apart Hotel 73</option><option value="H2451">Apple House Guest House</option><option value="H148">Arriva Hotel</option><option value="H2579">Arsenal Tavern Backpackers Hostel</option><option value="H2410">Ascot Hyde Park Hotel</option><option value="H2945">Assaha Hyde Park Hotel</option><option value="H324">Astor Court Hotel</option><option value="H1972">Astor Hyde Park</option><option value="H18">Astor Museum Inn</option><option value="H19">Astor Victoria</option><option value="H3010">Astoria Hotel London</option><option value="H1443">Astors Hotel</option><option value="H2912">At Home B and B</option><option value="H2748">Aviva Studios</option><option value="H2262">Avni Kensington Hotel</option><option value="H1714">Avon Hotel</option><option value="H3139">BB London Organic</option><option value="H2106">Bankside Apartments TopFloor!</option><option value="H2103">Bankside House TopFloor!</option><option value="H821">Bankside House</option><option value="H3132">Barking Park Hotel</option><option value="H2296">Barkston Rooms</option><option value="H2981">BayTree Hotel</option><option value="H453">Bayswater Inn</option><option value="H780">Beaconsfield Hotel</option><option value="H2453">Beit Hall London</option><option value="H750">Belgravia Rooms London</option><option value="H631">Belgrove Hotel</option><option value="H1522">Belmont Hotel London</option><option value="H2432">Best Inn Hotel</option><option value="H64">Best Western Burns Hotel</option><option value="H2419">Best Western Ilford Hotel</option><option value="H2659">Best Western Maitrise Suites</option><option value="H3152">Best Western Mornington</option><option value="H2964">Best Western Palm Hotel London</option><option value="H2892">Blackheath Bed and Breakfast</option><option value="H359">Blair Victoria and Tudor Inn Hotel</option><option value="H682">Bluebells Hotel</option><option value="H3047">Borough Rooms</option><option value="H1000">Boston Court Hotel</option><option value="H2860">Boston Manor Hotel</option><option value="H2819">Bowcity Apartments</option><option value="H1175">Bridge Park Hotel</option><option value="H2633">Britannia Inn Hotel</option><option value="H2219">Broadway Lodge</option><option value="H1846">Brompton Hotel London</option><option value="H3121">Brook Kingston Lodge</option><option value="H289">California Hotel London</option><option value="H514">Camden Inn Hostel</option><option value="H1426">Camden Lock Hotel</option><option value="H632">Carlton Hotel London</option><option value="H697">Carlton Hotel</option><option value="H2676">Carr-Saunders Apartment TopFloor!</option><option value="H833">Carr-Saunders Hall</option><option value="H1692">Caswell Hotel</option><option value="H2135">Central Hostel</option><option value="H651">Central Hotel London</option><option value="H444">Central House Hotel</option><option value="H441">Central Park Hotel London</option><option value="H2539">Central Park Hotel</option><option value="H642">Chelsea House Hotel</option><option value="H2870">Cherish Lodge</option><option value="H1626">Chester Hotel Victoria</option><option value="H3094">Chiswick Rooms</option><option value="H2917">Chris Lodge</option><option value="H804">City Inn Express</option><option value="H1901">City Stay Hotel London</option><option value="H2996">City View Hotel Roman Road Market</option><option value="H696">City View Hotel</option><option value="H1690">Classic Hotel</option><option value="H149">Clink261</option><option value="H1621">Clink78</option><option value="H1168">Comfort Inn Edgware Road</option><option value="H29">Comfort Inn London</option><option value="H447">Commodore Hotel London</option><option value="H2420">Corner House Hotel</option><option value="H3123">Cottage Guest House</option><option value="H1526">County Hotel Woodford</option><option value="H1137">Cranbrook Hotel</option><option value="H412">Craven Garden Hotel</option><option value="H290">Crestfield Hotel</option><option value="H1073">Cromwell Crown Hotel</option><option value="H1138">Croydon Court Hotel</option><option value="H408">Custom House Hotel</option><option value="H1527">Days Hotel Gatwick</option><option value="H2499">Days Hotel Hounslow</option><option value="H1514">Days Hotel London North</option><option value="H2391">Days Hotel Waterloo</option><option value="H1493">Digby Stuart College</option><option value="H293">Dinwiddy House Budget Rooms</option><option value="H644">Dover Hotel London</option><option value="H688">Duke Of Leinster</option><option value="H1718">Dylan Earls Court</option><option value="H1720">Dylan Kensington</option><option value="H1129">Dylan Paddington</option><option value="H1076">Earls Court Garden Hostel</option><option value="H2428">Eastside Halls</option><option value="H2241">Elmwood Hotel</option><option value="H1103">Euro Hotel Clapham</option><option value="H886">Euro Hotel Hammersmith</option><option value="H1116">Euro Hotel Wembley</option><option value="H1104">Euro Lodge Clapham</option><option value="H633">European Hotel</option><option value="H23">Fairway Hotel</option><option value="H2485">Firs Lodge</option><option value="H1433">Fitzroy Hotel</option><option value="H524">Forest Gate Hotel</option><option value="H1541">Fountain House Hotel</option><option value="H2110">Gatwick Belmont</option><option value="H2538">Gatwick White House Hotel</option><option value="H21">Generator Hostel</option><option value="H1691">Glendale Hyde Park Hotel</option><option value="H3072">Glorydale Inn</option><option value="H855">Gloucester Place Hotel</option><option value="H1425">Golden Star Hostel</option><option value="H2066">Golden Strand Hotel</option><option value="H3027">Golders Green Rooms</option><option value="H1556">Goldsmiths House (Female Only)</option><option value="H1733">Grange Wellington Hotel</option><option value="H1654">Grapevine Hotel</option><option value="H6">Great Dover Street Apartment Rooms</option><option value="H2993">Greenview Court</option><option value="H794">Griffin House Hotel</option><option value="H2108">Grosvenor House Studios TopFloor!</option><option value="H1107">Grosvenor House Studios</option><option value="H2294">Grove Hill Hotel</option><option value="H711">Hallmark Hotel Croydon</option><option value="H2696">Hamiltons Hotel</option><option value="H2771">Hammersmith Hotel London</option><option value="H2362">Hammersmith Rooms</option><option value="H5">Hampstead Rooms</option><option value="H1328">Hampstead Suites</option><option value="H347">Hanover Hotel London</option><option value="H751">Harrow Hall</option><option value="H1387">Hayesthorpe Hotel Croydon</option><option value="H657">Heathrow Lodge</option><option value="H1773">Helen Graham House London (Female only)</option><option value="H2407">High Holborn Apartment TopFloor!</option><option value="H2415">High Holborn Hall - Early Summer</option><option value="H842">High Holborn Hall</option><option value="H420">Holiday Inn Express Park Royal</option><option value="H321">Holiday Inn Express Royal Docks</option><option value="H2324">Holiday Inn London Kingston South</option><option value="H3145">Holiday Inn London Wembley</option><option value="H2442">Holland Court Hotel</option><option value="H1968">Holland Inn Hotel</option><option value="H1769">Holland Park Hotel</option><option value="H1880">Hollingbury Hotel</option><option value="H677">Holly House Hotel London</option><option value="H3008">Horizons Accommodation</option><option value="H2221">Hostel 170</option><option value="H2136">Hostel 639</option><option value="H2145">Hotel 43 London</option><option value="H2704">Hotel 65 London</option><option value="H1223">Hotel 82 London</option><option value="H1074">Hotel Olympia</option><option value="H2131">Hotel Sergul</option><option value="H832">Hour Glass Hotel</option><option value="H319">Huttons Hotel</option><option value="H1842">Hyde Park Apartments</option><option value="H304">Hyde Park Court Hotel</option><option value="H2961">Hyde Park Economy Apartments</option><option value="H1992">Hyde Park Hostel</option><option value="H523">Hyde Park Inn</option><option value="H58">Hyde Park Premier Paddington</option><option value="H1860">Hyde Park Suites</option><option value="H909">Hyde Park View</option><option value="H1492">Hyde Park Whiteleaf Hotel</option><option value="H1105">Ibis Styles London Croydon</option><option value="H1095">Ibis Styles London Leyton</option><option value="H2760">International Hall Internships</option><option value="H140">International House London</option><option value="H1122">Journeys Kings Cross</option><option value="H2316">Journeys London Bridge</option><option value="H2987">Julius Lodge Thamesmead</option><option value="H2876">Julius Lodge</option><option value="H1798">Kensington Suite Hotel</option><option value="H1612">Kensington West</option><option value="H2047">King Solomon Hotel London</option><option value="H2447">Kings Arms Guest House</option><option value="H2721">Kings Cross Hotel London</option><option value="H2983">Kings Cross Inn Hotel</option><option value="H7">Kings Hall</option><option value="H2185">Kings Head Guest House</option><option value="H1082">Kingston Budget Rooms</option><option value="H910">Lexham Gardens Hotel</option><option value="H2122">Leyton Rooms</option><option value="H709">Lidos Hotel</option><option value="H1759">Lodge 51 London</option><option value="H3199">Lodge Tanganyika</option><option value="H2495">London Grove Hotel</option><option value="H817">London Guest House Acton</option><option value="H1822">London Shelton Hotel</option><option value="H3130">London Stay Apartments</option><option value="H1620">London Town Hotel</option><option value="H3197">Lonsdale House</option><option value="H3136">Lonsdale hotel</option><option value="H154">Lord Jim Hotel</option><option value="H155">Lord Kensington Hotel</option><option value="H51">Manna Ash Budget Rooms</option><option value="H643">Marble Arch Inn</option><option value="H533">Marylebone Hall</option><option value="H403">Master Robert Hotel</option><option value="H748">Melville Hotel</option><option value="H297">Montana Hotel</option><option value="H638">Nayland Hotel London</option><option value="H3012">New Dawn Hotel London</option><option value="H2629">New Market House</option><option value="H2243">New Pembury Hotel</option><option value="H1003">Normandie Hotel</option><option value="H1729">Northfields Hostel</option><option value="H2107">Northumberland House TopFloor!</option><option value="H1337">Northumberland House</option><option value="H1984">Notting Hill Gate Hotel</option><option value="H1696">Notting Hill Hostel</option><option value="H1731">Notting Hill Hotel</option><option value="H2619">Old Friend Hotel</option><option value="H2364">Osborne Hotel</option><option value="H2070">Osterley Park Hotel</option><option value="H1932">Oxford Hotel London</option><option value="H1075">Pacific Hotel</option><option value="H2951">Paddington Apartments</option><option value="H282">Paddington Court Hotel</option><option value="H857">Paddington Court Rooms</option><option value="H440">Paddington Court Suites</option><option value="H2285">Palace Court Holiday Apartments</option><option value="H1171">Palmers Lodge</option><option value="H1772">Park House (Female Only)</option><option value="H2386">Passfield Apartment TopFloor!</option><option value="H809">Passfield Hall</option><option value="H1118">Peckham Lodge</option><option value="H1897">Pembridge Palace Hotel London</option><option value="H1012">Premier West</option><option value="H3196">Qbic Hotel London City</option><option value="H367">Quality Hotel Wembley</option><option value="H755">Queen Marys Rooms</option><option value="H1106">Queens Hotel London</option><option value="H82">Queens Park Hotel</option><option value="H678">Raglan Hotel</option><option value="H237">Reem Hotel London</option><option value="H3069">Rest Up London</option><option value="H2211">Revive Lodge Heathrow</option><option value="H1108">Romanos Hotel</option><option value="H2547">Rooms For You</option><option value="H3050">Rose Court Marble Arch</option><option value="H808">Rosebery Hall</option><option value="H1004">Royal Bayswater Hostel</option><option value="H391">Royal Eagle London</option><option value="H2151">Royal Guest House 2</option><option value="H302">Royal Hyde Park Hotel</option><option value="H873">Royal London Hotel</option><option value="H3143">Russell Court Hotel W14</option><option value="H3013">SO West</option><option value="H2953">Safestay London</option><option value="H1702">Sani Hotel</option><option value="H1810">Sara Hotel London</option><option value="H2992">Schafer House</option><option value="H358">Shaftesbury Kensington Hotel</option><option value="H418">Shaftesbury Metropolis London Hyde Park</option><option value="H286">Shaftesbury Piccadilly Hotel</option><option value="H84">Shaftesbury Premier London Hyde Park Hotel</option><option value="H1791">Shaftesbury Premier London Notting Hill</option><option value="H74">Shaftesbury Premier Paddington</option><option value="H3200">Shoreditch Inn</option><option value="H2613">Silk House Hotel</option><option value="H1149">Sir John Cass Hall</option><option value="H1820">Skyways Hotel</option><option value="H2220">Smart Russell Square</option><option value="H1260">So London Apartments Hammersmith</option><option value="H1229">So London Apartments</option><option value="H2705">So Paddington</option><option value="H3108">So Park</option><option value="H1986">Southside Halls</option><option value="H2266">St George`s Lodge</option><option value="H1504">St Georgio Hotel</option><option value="H2537">St Joseph Hotel London</option><option value="H1861">St Mark Hotel</option><option value="H4">Stamford Street Apartment Rooms</option><option value="H1705">Stanley House Hotel</option><option value="H1499">Stratford Hotel</option><option value="H2999">Stratford Rooms (Ham Park)</option><option value="H3000">Stratford Rooms (Selbert Road)</option><option value="H2998">Stratford Rooms (Walnut Gardens)</option><option value="H681">Swinton Hotel</option><option value="H2740">Tennyson House</option><option value="H1538">The Belgravia Hostel</option><option value="H2874">The Brent Hotel</option><option value="H2936">The Bridge Hotel</option><option value="H2624">The Bull and Bush Hotel</option><option value="H726">The Central</option><option value="H2405">The Cranford Hotel</option><option value="H3115">The Devils Punchbowl Hotel</option><option value="H2968">The Dictionary Shoreditch</option><option value="H2762">The Elstree Inn</option><option value="H2974">The Fosters B and B</option><option value="H3142">The Gardens Guesthouse</option><option value="H3160">The Kensington Studios</option><option value="H1166">The Park Hotel Ilford</option><option value="H3071">The Pillar Hotel</option><option value="H2841">The Tudor Lodge</option><option value="H846">The W14 Hotel London</option><option value="H2995">The Whitechapel</option><option value="H879">Tommy Miah Raj Hotel London</option><option value="H1520">Tony's House Hotel</option><option value="H3003">Travel Inn London</option><option value="H1077">Tudor Court Hotel</option><option value="H3077">Twickenham Guest House</option><option value="H31">Vancouver Studios</option><option value="H637">Vegas Hotel London</option><option value="H1687">Victor Hotel</option><option value="H448">Victoria Inn</option><option value="H1264">Wardonia Hotel</option><option value="H2411">Wembley Hotel London</option><option value="H147">West Cromwell Hotel</option><option value="H2880">West London Annexe Rooms</option><option value="H1776">West Two Hostel London</option><option value="H1775">Westfield Hostel</option><option value="H137">Wigram House</option><option value="H3116">Windmill Place Apartments</option><option value="H680">Windsor House Hotel</option><option value="H717">YHA London - St Pancras</option></select>
+																					</div>
+																				</div>
+																				<div class="row">
+																			    <label for="check-in">Check in</label>
+																					<div class="date">
+																						<input class="text" id="check-in" type="text" value="dd/mm/yyy"/>
+																						<!--a class="btn-calendar" href="#"><img class="png" src="images/ico-calendar.png" width="25" height="30" alt="image description" /></a-->
+																					</div>
+																				</div>
+																				<div class="row">
+																					<label for="check-out">Check out</label>
+																					<div class="date">
+																						<input class="text" id="check-out" type="text" value="dd/mm/yyy">
+																						<!--a class="btn-calendar" href="#"><img class="png" src="images/ico-calendar.png" width="25" height="30" alt="image description" /></a-->
+																					</div>
+																				</div>
+																				<div class="row">
+																					<label for="guests">Guests</label>
+																					<select class="sel2" id="cmbNoOfAdults" onchange="checkAdultNo();">
+																						<option value="1">1</option>
+																						<option value="2">2</option>
+																						<option value="3">3</option>
+																						<option value="4">4</option>
+																						<option value="5">5</option>
+																						<option value="6">6</option>
+																						<option value="7">7</option>
+																						<option value="8">8</option>
+																						<option value="9">9</option>
+																						<option value="10">10</option>	
+																						<option value="11">11</option>
+																						<option value="12">12</option>
+																						<option value="13">13</option>
+																						<option value="14">14</option>
+																						<option value="15">15</option>
+																						<option value="16">16</option>																							
+																						<option value="17">17</option>																							
+																						<option value="18">18</option>																							
+																						<option value="19">19</option>																							
+																						<option value="20">20</option>																							
+																						<option value="21+">21+</option>																							
+																					</select>
+																				</div>
+																				
+																				<div class="row">
+																					<div class="field">																						
+																						<a class="btn-search3" id="imgSearch" href="javascript:searchHotel();">Search now</a>
+																					</div>
+																				</div>
+																				<input class="hidden" type="submit" value="Search">
+																			</fieldset>
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- sidebar -->
+								<div id="sidebar">
+									<!-- sidebox -->
+									<div class="sidebox sidebox4">
+										<div class="t"></div>
+										<div class="c">
+											<h3>Book with TravelStay</h3>
+											<ul class="list">
+										    <li>Lowest prices</li>
+												<li>Only pay a deposit to book</li>
+												<li>Student discounts</li>
+											</ul>
+										</div>
+										<div class="b"></div>
+									</div>
+									<!-- sidebox -->
+									<div class="sidebox2">
+										<div class="t"></div>
+										<div class="c">
+											<div class="area">
+												<!-- ad -->
+												<div class="ad">
+													<a href="http://bookings.travelstay.com/TravelStayBooking.htm#"><img src="images/logo-price-promise.png" width="59" height="59" alt="image description"></a>
+													<h3><a href="http://bookings.travelstay.com/TravelStayBooking.htm#">TravelStay Price Promise</a></h3>
+													<p>Find the same room for less and we will refund you twice the difference!</p>
+												</div>
+											</div>
+										</div>
+										<div class="b"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<div id="footer">
+			<div class="footer-holder">
+				<div class="footer-frame">
+					<div class="footer-area">
+						<!-- footer-block footer-nav -->
+						<div class="footer-block footer-nav">
+							<div class="tl">
+								<div class="tr">
+									<strong class="small-logo"><a href="http://bookings.travelstay.com/TravelStayBooking.htm#">TravelStay.com</a></strong>
+									<a class="facebook" href="http://bookings.travelstay.com/TravelStayBooking.htm#"><img src="images/facebook.gif" width="127" height="41" alt="image description"></a>
+									<div class="txt">
+										<ul>
+										   <li><a href="javascript:windoPop('http://www.travelstay.com/new/AboutUs.htm')">About Us</a></li>
+										   <li><a href="javascript:windoPop('http://www.travelstay.com/new/policies2.htm')">Policies</a></li>
+										   <li><a href="javascript:windoPop('http://www.travelstay.com/new/Contact.htm')">Contact Us</a></li>
+										   <!--li><a href="#">Customer Service</a></li-->
+										   <li><a href="javascript:windoPop('http://www.travelstay.com/new/FAQs.htm')">FAQs</a></li>
+										   
+										   
+										   
+									    </ul>
+										<p>TravelStay.com: Thousands of cheap hotels, b&amp;bs and hostels worldwide. No booking fees and prices from only £15 per person!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					<!-- footer-block --><!-- footer-block --></div>
+				</div>
+			</div>
+		</div>
+		<div class="skip"><a href="http://bookings.travelstay.com/TravelStayBooking.htm#header">Back to top</a></div>
+	</div>
+	<script language="javascript">	
+	try{
+		var valOfC = gup( 'C' ); 
+	
+		if((null==valOfC)){ 
+		for(i=0;i<50;i++){ 
+			if(document.getElementById("cmbCity").options[i].value=='CY1'){
+				document.getElementById("cmbCity").selectedIndex=i;
+				ldRelData('CY1','%'); 
+			}
+			}
+		}
+	}catch(e){}
+	</script>
+	<div class="lightbox">
+		<div class="png-box">
+			<div class="t"><span>&nbsp;</span><em>&nbsp;</em></div>
+			<div class="holder">
+				<span class="l">&nbsp;</span>
+				<span class="r">&nbsp;</span>
+				<div class="content">
+					<a class="btn-close" href="http://bookings.travelstay.com/TravelStayBooking.htm#">Close</a>
+					<h3>Choose travel dates</h3>
+					<form class="search-block search-form" action="http://bookings.travelstay.com/TravelStayBooking.htm#">
+						<fieldset>
+							<div class="row">
+								<label for="check-in2">Check in</label>
+								<input class="text" id="check-in2" type="text" value="dd/mm/yyy">
+								<a class="btn-calendar" href="http://bookings.travelstay.com/TravelStayBooking.htm#"><img class="png" src="images/ico-calendar2.png" width="22" height="25" alt="image description"></a>
+							</div>
+							<div class="row">
+								<label for="check-out2">Check out</label>
+								<input class="text" id="check-out2" type="text" value="dd/mm/yyy">
+								<a class="btn-calendar" href="http://bookings.travelstay.com/TravelStayBooking.htm#"><img class="png" src="images/ico-calendar2.png" width="22" height="25" alt="image description"></a>
+							</div>
+							<div class="row2">
+								<label for="guests2">Guests</label>
+								<select id="guests2">
+									<option>1</option>
+									<option>2</option>
+								</select>
+								<input class="btn-search" type="submit" value="Search">
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+			<div class="b"><span>&nbsp;</span><em>&nbsp;</em></div>
+		</div>
+	</div>
+	<!-- script type="text/javascript">
+		loadCurrencyCode();
+		currencycreator();
+	</script-->
+	
+	<!-- Google Code for All Visitors (New) -->
+	<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+	<!-- script type="text/javascript">
+	/* <![CDATA[ */
+	var google_conversion_id = 1037324511;
+	var google_conversion_label = "ewgaCJGSjgYQ36HR7gM";
+	var google_custom_params = window.google_tag_params;
+	var google_remarketing_only = true;
+	/* ]]> */
+	</script>
+	<script type="text/javascript" src="images/conversion.js">
+	</script><iframe name="google_conversion_frame" title="Google conversion frame" width="300" height="13" src="images/saved_resource.htm" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no">&lt;img height="1" width="1" border="0" alt="" src="http://googleads.g.doubleclick.net/pagead/viewthroughconversion/1037324511/?frame=0&amp;random=1381296481550&amp;cv=7&amp;fst=1381296481550&amp;num=1&amp;fmt=1&amp;label=ewgaCJGSjgYQ36HR7gM&amp;guid=ON&amp;u_h=768&amp;u_w=1366&amp;u_ah=768&amp;u_aw=1302&amp;u_cd=32&amp;u_his=2&amp;u_tz=330&amp;u_java=true&amp;u_nplug=21&amp;u_nmime=66&amp;url=http%3A//bookings.travelstay.com/TravelStayBooking.htm&amp;frm=0" /&gt;</iframe>
+	<noscript>
+	&lt;div style="display:inline;"&gt;
+	&lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1037324511/?value=0&amp;amp;label=ewgaCJGSjgYQ36HR7gM&amp;amp;guid=ON&amp;amp;script=0"/&gt;
+	&lt;/div&gt;
+	</noscript-->
+
+
+
+<div class="fader" style="position: absolute; top: 0px; left: 0px; z-index: 999; background-color: black; opacity: 0.7; background-position: initial initial; background-repeat: initial initial;"></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi-2 ui-datepicker-multi" style="width: 38em;"><div class="ui-datepicker-group ui-datepicker-group-first"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-left"><a class="ui-datepicker-prev ui-corner-all ui-state-disabled" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><div class="ui-datepicker-title"><select class="ui-datepicker-month" onchange="DP_jQuery_1381296473977.datepicker._selectMonthYear(&#39;#check-out&#39;, this, &#39;M&#39;);" onclick="DP_jQuery_1381296473977.datepicker._clickMonthYear(&#39;#check-out&#39;);"><option value="9" selected="selected">Oct</option><option value="10">Nov</option><option value="11">Dec</option></select><select class="ui-datepicker-year" onchange="DP_jQuery_1381296473977.datepicker._selectMonthYear(&#39;#check-out&#39;, this, &#39;Y&#39;);" onclick="DP_jQuery_1381296473977.datepicker._clickMonthYear(&#39;#check-out&#39;);"><option value="2013" selected="selected">2013</option><option value="2014">2014</option><option value="2015">2015</option></select></div></div><table class="ui-datepicker-calendar"><thead><tr><th><span title="Monday">Mo</span></th><th><span title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th><th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">1</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">2</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">3</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">4</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled  ui-state-highlight"><span class="ui-state-default">5</span></td><td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled  ui-state-highlight"><span class="ui-state-default">6</span></td></tr><tr><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">7</span></td><td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">8</span></td><td class="  ui-datepicker-today" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default ui-state-highlight" href="http://bookings.travelstay.com/TravelStayBooking.htm#">9</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">10</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">11</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">12</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">13</a></td></tr><tr><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">14</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">15</a></td><td class="  ui-state-startDate" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">16</a></td><td class="  ui-state-endDate ui-datepicker-current-day" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default ui-state-active" href="http://bookings.travelstay.com/TravelStayBooking.htm#">17</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">18</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">19</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">20</a></td></tr><tr><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">21</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">22</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">23</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">24</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">25</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">26</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">27</a></td></tr><tr><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">28</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">29</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">30</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,9,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><div class="ui-datepicker-group ui-datepicker-group-last"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-right"><a class="ui-datepicker-next ui-corner-all" onclick="DP_jQuery_1381296473977.datepicker._adjustDate(&#39;#check-out&#39;, +1, &#39;M&#39;);" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">November</span>&nbsp;<span class="ui-datepicker-year">2013</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th><span title="Monday">Mo</span></th><th><span title="Tuesday">Tu</span></th><th><span title="Wednesday">We</span></th><th><span title="Thursday">Th</span></th><th><span title="Friday">Fr</span></th><th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th><th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">1</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">2</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">3</a></td></tr><tr><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">4</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">5</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">6</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">7</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">8</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">9</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">10</a></td></tr><tr><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">11</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">12</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">13</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">14</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">15</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">16</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">17</a></td></tr><tr><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">18</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">19</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">20</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">21</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">22</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">23</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">24</a></td></tr><tr><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">25</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">26</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">27</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">28</a></td><td class=" " onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">29</a></td><td class=" ui-datepicker-week-end  ui-state-highlight" onclick="DP_jQuery_1381296473977.datepicker._selectDay(&#39;#check-out&#39;,10,2013, this);return false;"><a class="ui-state-default" href="http://bookings.travelstay.com/TravelStayBooking.htm#">30</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr><tr><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div><div class="ui-datepicker-row-break"></div><div class="ui-datepicker-buttonpane ui-widget-content"><button type="button" class="ui-datepicker-current ui-state-default ui-priority-secondary ui-corner-all" onclick="DP_jQuery_1381296473977.datepicker._gotoToday(&#39;#check-out&#39;);">Today</button><button type="button" class="ui-datepicker-close ui-state-default ui-priority-primary ui-corner-all" onclick="DP_jQuery_1381296473977.datepicker._hideDatepicker();">Done</button></div></div></body></html>
